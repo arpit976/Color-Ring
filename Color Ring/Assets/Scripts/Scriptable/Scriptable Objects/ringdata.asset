@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e079eaa9f9619204ca6e7c25d8a10936, type: 3}
+  m_Name: ringdata
+  m_EditorClassIdentifier: 
+  colors:
+  - colorType: 0
+    color: {r: 1, g: 0.11600001, b: 0, a: 1}
+  - colorType: 1
+    color: {r: 0.06132078, g: 0.30498415, b: 1, a: 1}
+  - colorType: 2
+    color: {r: 0.1650664, g: 0.9433962, b: 0.10234961, a: 1}
+  - colorType: 3
+    color: {r: 1, g: 0.9374813, b: 0.042452812, a: 1}
+  - colorType: 4
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - colorType: 5
+    color: {r: 1, g: 0, b: 0.9097805, a: 1}
+  spriteDatas:
+  - sprite: {fileID: 21300000, guid: 2b49718ae855fa843b33caa7a19624f2, type: 3}
+    ringSize: 0
+  - sprite: {fileID: 21300000, guid: 47dccb7e44e4f184bb6f49f8814a504b, type: 3}
+    ringSize: 1
+  - sprite: {fileID: 21300000, guid: 928759e79500502458552651bb6fd2fd, type: 3}
+    ringSize: 2
