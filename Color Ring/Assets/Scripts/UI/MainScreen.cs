@@ -36,7 +36,7 @@ public class MainScreen : MonoBehaviour
 
     public void OnResumeButtonClick()
     {
-
+        UiManager.Instance.ResumeGame();
     }
 
     public void OnExitButtonClick()

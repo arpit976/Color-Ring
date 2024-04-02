@@ -23,6 +23,7 @@ public class UiManager : MonoBehaviour
     {
         gamePlayView.gameObject.SetActive(false);
         mainScreen.gameObject.SetActive(true);
+        GameManager.Instance.grid.gameObject.SetActive(false);
     }
 
     #endregion
@@ -34,13 +35,24 @@ public class UiManager : MonoBehaviour
         gamePlayView.gameObject.SetActive(true);
         mainScreen.gameObject.SetActive(false);
         GameManager.Instance.Restart();
+        GameManager.Instance.grid.gameObject.SetActive(true);
+    }
+
+    public void ResumeGame()
+    {
+        GameManager gameManager = GameManager.Instance;
+        gamePlayView.gameObject.SetActive(true);
+        mainScreen.gameObject.SetActive(false);
+        gameManager.grid.gameObject.SetActive(true);
+        gameManager.StartSpawnRingCoroutine();
     }
 
     public void ExitGamePlayView()
     {
         gamePlayView.gameObject.SetActive(false);
         mainScreen.gameObject.SetActive(true);
-        GameManager.Instance.ClearBoard(); 
+        GameManager.Instance.ringHolder.ClearSlots();
+        GameManager.Instance.grid.gameObject.SetActive(false);
     }
 
     #endregion
