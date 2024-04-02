@@ -33,17 +33,19 @@ public class GameManager : MonoBehaviour
         UiManager.Instance.gamePlayView.ResetScore();
         StartCoroutine(SpawnRing());
     }
-    #endregion
-
-    #region PRIVATE_FUNCTIONS
-    private void ClearBoard()
+    public void ClearBoard()
     {
         ringHolder.ClearSlots();
         grid.ClearCells();
     }
+
+    #endregion
+
+    #region PRIVATE_FUNCTIONS
     #endregion
 
     #region CO-ROUTINES
+
     IEnumerator SpawnRing()
     {
         yield return new WaitForSeconds(0.5f);

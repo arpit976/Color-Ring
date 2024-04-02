@@ -14,7 +14,7 @@ public class RingHolder : MonoBehaviour
     #region UNITY_CALLBACKS
     private void Start()
     {
-        SpawnNewRings();
+        //SpawnNewRings();
     }
     #endregion
 

@@ -41,14 +41,7 @@ public class GamePlayView : MonoBehaviour
         currentScore = 0;
         currentScoreText.text = currentScore.ToString();
     }
-    public void OnPauseClick()
-    {
-
-    }
-    public void OnRestartClick()
-    {
-        GameManager.Instance.Restart();
-    }
+    
     #endregion
 
     #region PRIVATE_FUNCTIONS
@@ -67,6 +60,15 @@ public class GamePlayView : MonoBehaviour
     #endregion
 
     #region UI_CALLBACKS
+    public void OnExitClick()
+    {
+        UiManager.Instance.ExitGamePlayView();
+    }
+    public void OnRestartClick()
+    {
+        GameManager.Instance.Restart();
+    }
+
     #endregion
 
 }
